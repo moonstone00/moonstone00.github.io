@@ -1,0 +1,46 @@
+@media screen and (max-width: 950px) {
+    .contact-us .text-contact h2 {
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .form-contact input {
+        padding: 0.6rem 3rem 0.6rem 7px;
+    }
+
+    .form-contact textarea {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 632px) and (max-width: 840px) {
+    .form-contact input {
+        padding: 0.6rem 1rem 0.6rem 7px;
+    }
+    .form-contact textarea {
+        width: 210px;
+    }
+    .contact-img img {
+        min-width: 100%;
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 915px) and (min-width: 674px) {
+    .text-card p {
+        font-size: 0.8rem;
+    }
+    .contact-us .text-contact h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contact-img img {
+        min-width: 100%;
+        width: 100px;
+        height: auto;
+    }
+}

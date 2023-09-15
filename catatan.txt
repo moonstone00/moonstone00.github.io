@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --main-color: #ff8b4d;
+    --text-color: #fff;
+    --second-color: #3fa676;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+*::selection {
+    background-color: var(--second-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--text-color);
+    padding: 30px 170px;
+    /* border: 1px solid red; */
+}
+
+.logo {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.logo span {
+    color: initial;
+}
+
+.navbar {
+    display: flex;
+    /* border: 1px solid black; */
+}
+
+.navbar li {
+    padding: 0.5rem 2rem;
+}
+
+.navbar li a {
+    font-weight: 500;
+    color: var(--second-color);
+}
+
+.navbar li a:hover {
+    color: var(--main-color);
+    transition: .4s;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 70px 17%;
+}
+
+.home {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-gap: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.home-text {
+    /* border: 1px solid red; */
+    line-height: 64px;
+}
+
+.home img {
+    /* border: 1px solid black; */
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.home-text .hello {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.home-text h2 {
+    font-size: 3rem;
+}
+
+.home-text h2 span {
+    color: var(--main-color);
+}
+
+.home-text .status {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-project {
+    background-color: var(--main-color);
+    margin-right: 3.2rem;
+}
+
+.btn-resume {
+    background-color: var(--second-color);
+}
+
+.portofolio {
+    background-color: var(--main-color);
+}
+
+.text-title {
+    text-align: center;
+}
+
+.card-portofolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    margin-top: 4rem;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #feeee7;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+
+.card-img {
+    border: 1px solid red;
+    width: 310px;
+    height: 310px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .text-web {
+    position: absolute;
+    bottom: 10px;
+} */
+
+
+<section class="portofolio" id="portofolio">
+            <div class="text-title">
+                <p>Service</p>
+                <h1>Specialized In</h1>
+            </div>
+    
+            <div class="card-portofolio">
+                <div class="card card-web">
+                    <div class="card-img">
+                        <img src="/assets/images/webDeveloper.png" alt="">
+                    </div>
+                    
+                    <p>Web Development</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nostrum excepturi sint, voluptatibus sed aut ducimus accusantium qui officia modi!</p>
+                    
+                </div>
+
+                <div class="card card-web">
+                    <div class="card-img">
+                        <img src="/assets/images/webDeveloper.png" alt="">
+                    </div>
+                    
+                    <p>Web Development</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nostrum excepturi sint, voluptatibus sed aut ducimus accusantium qui officia modi!</p>
+                    
+                </div>
+                <div class="card card-web">
+                    <div class="card-img">
+                        <img src="/assets/images/webDeveloper.png" alt="">
+                    </div>
+                    
+                    <p>Web Development</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nostrum excepturi sint, voluptatibus sed aut ducimus accusantium qui officia modi!</p>
+                    
+                </div>
+            </div>
+    </section>
+
+<section class="contact" id="contact">
+        <div class="container-contact">
+            <div class="icon-contact">
+                <div class="icon house">
+                    <i class='bx bx-home-alt'></i>
+                    <p>Griya Alam Sentosa Blok T4</p>
+                </div>
+                <div class="icon telp">
+                    <i class='bx bxs-phone'></i>
+                    <p>+62 851 - 7303 - 6011</p>
+                </div>
+                <div class="icon email">
+                    <i class='bx bxs-envelope' ></i>
+                    <p>ghifani03@gmail.com</p>
+                </div>
+            </div>
+            <div class="button">
+                <p>hai</p>
+                <p>asw</p>
+                <p>apa kabar semuanya</p>
+            </div>
+        </div>
+    </section>
+
+contact
+<section id="contact">
+        <div class="contact">
+            <div class="contact-us">
+                <h3>Contact Us</h3>
+                <div class="contact-cover">
+                    <div class="img-contact">
+                        <i class='bx bxs-home'></i>
+                        <p>Griya Alam Sentosa Blok T4</p>
+                    </div>
+                    <div class="img-contact">
+                        <i class='bx bxs-envelope' ></i>
+                        <p>ghifani03@gmail.com</p>
+                    </div>
+                    <div class="img-contact">
+                        <i class='bx bxl-whatsapp' ></i>
+                        <p>+62 878 - 8987 - 5820</p>
+                    </div>
+                </div>
+
+                <div class="icon-contact">
+                    <div class="icon-contact-link">
+                        <a href="#">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                    </div>
+                    <div class="icon-contact-link">
+                        <a href="#">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </div>
+                    <div class="icon-contact-link">
+                        <a href="#">
+                            <i class='bx bxl-github' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="send-message">
+                <div class="null">
+                    <div class="fill">
+                        <h3>Send Me Message</h3>
+                        <h4>let's get to know more closely</h4>
+
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Name" name="name">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email" name="email">
+                            </div>
+                            <div>
+                                <textarea name="message" id="message" cols="10" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div>
+                                <button class="btn">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    #contact {
+    background-image: url(/assets/images/gps.png);
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    height: 100vh;
+    padding: 50px 0;
+}
+
+.contact {
+    box-sizing: border-box;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    width: 800px;
+}
+
+.contact-us {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    fill: var(--text-color);
+    position: absolute;
+    z-index: 3;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.contact-us h3 {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.contact-cover {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px 0 30px;
+}
+
+.contact-cover .img-contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact-cover p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+}
