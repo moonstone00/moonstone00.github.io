@@ -317,7 +317,9 @@ header {
 
 .form-contact input{
     border: none;
-    padding: 0.6rem 5.5rem 0.6rem 7px;
+    padding: 0.6rem 0 0.6rem 7px;
+    max-width: 100%;
+    width: 290px;
     margin: 1rem 0;
     border-radius: 12px;
     font-size: 1rem;
