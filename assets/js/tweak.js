@@ -8,3 +8,4 @@ humburger_menu.addEventListener("click", function() {
 window.onscroll = () => {
     navbar.classList.remove("active")
 }
+
