@@ -30,7 +30,14 @@
 
 @media screen and (max-width: 950px) {
     .contact-us .text-contact h2 {
-        letter-spacing: 2px;
+        letter-spacing: 4.5px;
+    }
+    .form-contact input {
+        width: 260px;
+    }
+    .form-contact textarea {
+        width: 250px;
+        height: 200px;
     }
 }
 
@@ -61,7 +68,7 @@
 
 @media screen and (max-width: 880px) {
     .form-contact textarea {
-        width: 250px;
+        width: 240px;
     }
 }
 
