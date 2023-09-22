@@ -157,15 +157,28 @@
                 <div class="text-contact">
                     <h2>Contact Us</h2>
                 </div>
-                <div class="form-contact">
-                    <input type="text" placeholder="Name" name="name">
-                </div>
-                <div class="form-contact">
-                    <input type="email" placeholder="Email" name="email">
-                </div>
-                <div class="form-contact">
-                    <textarea name="text" id="text" cols="36" rows="10"></textarea>
-                </div>
+                <form class="form-contact">
+                    <div class="form-contact">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="Enter name"
+                        />
+                    </div>
+                    <div class="form-contact">
+                        <input
+                            type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="Enter email"
+                        />
+                    </div>
+                    <div class="form-contact">
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" onclick="sendMail()">Send</button>
+                </form>
             </div>
 
             <div class="contact-img">
@@ -174,6 +187,7 @@
         </div>
     </section>
 
+<!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
 <script src="/assets/js/tweak.js"></script>
 </body>
 </html>
