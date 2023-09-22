@@ -17,17 +17,6 @@
     }
 }
 
-@media screen and (max-width: 1032px) {
-    .contact-us .text-contact{
-        letter-spacing: 5px;
-    }
-    .contact-us {
-        background-color: var(--second-color);
-        border-radius: 30px;
-        padding: 3rem 1.5rem ;
-    }
-}
-
 @media screen and (max-width: 950px) {
     .contact-us .text-contact h2 {
         letter-spacing: 4.5px;
@@ -44,6 +33,7 @@
 @media screen and (max-width: 900px) {
     #menu-icon {
         display: initial;
+        /* color: #fff; */
     }
     header .navbar {
         display: flex;
@@ -67,12 +57,19 @@
 }
 
 @media screen and (max-width: 880px) {
+    .form-contact input {
+        width: 240px;
+    }
+
     .form-contact textarea {
         width: 240px;
     }
 }
 
 @media screen and (min-width: 632px) and (max-width: 840px) {
+    .form-contact input {
+        width: 210px;
+    }
     .form-contact textarea {
         width: 210px;
     }
@@ -114,6 +111,9 @@
 @media screen and (max-width: 410px) {
     .contact-us .text-contact h2{
         font-size: 2rem;
+    }
+    .form-contact input {
+        padding: 0.6rem 1.5rem 0.6rem 7px;
     }
     .form-contact textarea {
         width: 225px;
